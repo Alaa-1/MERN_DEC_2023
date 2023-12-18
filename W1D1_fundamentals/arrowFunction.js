@@ -1,4 +1,3 @@
-
 // // function declaration
 // function hello(username){
 
@@ -18,30 +17,27 @@
 // // shorter way
 // const helloShort = userName => `Hello ${userName}`
 
-
 // // Function Expression
 // // anonymous function
 // const addOne = function(num){
 //     return num +1
 // }
 
-
 // syntactic sugar
 
-
 // turnary operator 3
-// 2 - binary 
+// 2 - binary
 // 10 - decimal
 // 16 - hexadecimal
 
-let age = 5
-if (age >= 21){
-    return "you may pass !"
-}else{
-    "you are too young"
+let age = 5;
+if (age >= 21) {
+  return "you may pass !";
+} else {
+  ("you are too young");
 }
 
-age >= 25 ? "you may pass !": "you are too young"
+age >= 25 ? "you may pass !" : "you are too young";
 
 // age >=25 && console.log("Congrats"); // short circut
 

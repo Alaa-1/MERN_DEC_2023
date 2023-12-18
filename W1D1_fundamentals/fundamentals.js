@@ -10,7 +10,6 @@
 // sayHi();
 // console.log(name);
 
-
 // === Hoisting ===
 
 // console.log("what is x?", x);
@@ -52,12 +51,12 @@
 
 // === Destructuring ===
 // const email = "a@a.com";
-// const person = { 
-//     firstName: 'Bob', 
-//     lastName: 'Marley', 
-//     email: 'bob@marley.com', 
-//     password: 'sekureP@ssw0rd9', 
-//     username: 'barley', 
+// const person = {
+//     firstName: 'Bob',
+//     lastName: 'Marley',
+//     email: 'bob@marley.com',
+//     password: 'sekureP@ssw0rd9',
+//     username: 'barley',
 //     createdAt: 1543945177623
 // };
 
@@ -104,55 +103,53 @@
 //   console.log(first);
 //   console.log(city);
 
+// === Rest/Spread ===
 
-  // === Rest/Spread ===
+const animals = ["horse", "dog", "fish", "cat", "bird"];
 
-  const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
-
-  const [firstPet, secondPet, ...otherPets] = animals
+const [firstPet, secondPet, ...otherPets] = animals;
 
 //   console.log(otherPets);
 
-  const animalList = ['horse', 'dog', 'fish', 'cat', 'bird']
-  const petList = [...animalList]
+const animalList = ["horse", "dog", "fish", "cat", "bird"];
+const petList = [...animalList];
 
-  console.log(petList);
+console.log(petList);
 
-  console.log(animalList === petList);
+console.log(animalList === petList);
 
-  const person = {
-    firstName: 'Bob',
-    lastName: 'Marley',
-    email: 'bob@marley.com',
-    password: 'sekureP@ssw0rd9',
-    username: 'barley',
-    addresses: [
-      {
-        address: '1600 Pennsylvania Avenue',
-        city: 'Washington, D.C.',
-        zipcode: '20500',
-      },
-      {
-        address: '221B Baker St.',
-        city: 'London',
-        zipcode: 'WC2N 5DU',
-      }
-    ],
-    createdAt: 1543945177623
-  };
+const person = {
+  firstName: "Bob",
+  lastName: "Marley",
+  email: "bob@marley.com",
+  password: "sekureP@ssw0rd9",
+  username: "barley",
+  addresses: [
+    {
+      address: "1600 Pennsylvania Avenue",
+      city: "Washington, D.C.",
+      zipcode: "20500",
+    },
+    {
+      address: "221B Baker St.",
+      city: "London",
+      zipcode: "WC2N 5DU",
+    },
+  ],
+  createdAt: 1543945177623,
+};
 
-  const {firstName, lastName, ...anotherObject} = person
+const { firstName, lastName, ...anotherObject } = person;
 
-  console.log(anotherObject);
+console.log(anotherObject);
 
+const { anotherPerson } = { ...person };
 
-  const {anotherPerson} = {...person}
+console.log(anotherPerson === person);
 
-  console.log(anotherPerson === person);
+const another = {
+  ...person,
+  firstName: "Tom",
+};
 
-  const another = {
-      ...person,
-      firstName: "Tom"
-  }
-
-  console.log(another);
+console.log(another);
